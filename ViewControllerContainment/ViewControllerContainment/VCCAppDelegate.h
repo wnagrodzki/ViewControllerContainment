@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class VCCViewController;
 
 @interface VCCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) VCCViewController *viewController;
 
 @end

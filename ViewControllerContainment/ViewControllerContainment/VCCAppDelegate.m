@@ -7,8 +7,8 @@
 //
 
 #import "VCCAppDelegate.h"
-
 #import "VCCViewController.h"
+
 
 @implementation VCCAppDelegate
 
@@ -16,8 +16,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[VCCViewController alloc] initWithNibName:@"VCCViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    VCCViewController * viewController = [[VCCViewController alloc] initWithNibName:@"VCCViewController" bundle:nil];
+    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E5F159816DBFE04003A87FA /* VCCAutomaticCallbacksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F159616DBFE04003A87FA /* VCCAutomaticCallbacksViewController.m */; };
+		2E5F159916DBFE04003A87FA /* VCCAutomaticCallbacksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F159716DBFE04003A87FA /* VCCAutomaticCallbacksViewController.xib */; };
+		2E5F159D16DBFE19003A87FA /* VCCManualCallbacksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F159B16DBFE19003A87FA /* VCCManualCallbacksViewController.m */; };
+		2E5F159E16DBFE19003A87FA /* VCCManualCallbacksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E5F159C16DBFE19003A87FA /* VCCManualCallbacksViewController.xib */; };
 		2E9F4BD316D405AD000F1A04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9F4BD216D405AD000F1A04 /* UIKit.framework */; };
 		2E9F4BD516D405AD000F1A04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9F4BD416D405AD000F1A04 /* Foundation.framework */; };
 		2E9F4BD716D405AD000F1A04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9F4BD616D405AD000F1A04 /* CoreGraphics.framework */; };
@@ -21,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E5F159516DBFE04003A87FA /* VCCAutomaticCallbacksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCAutomaticCallbacksViewController.h; sourceTree = "<group>"; };
+		2E5F159616DBFE04003A87FA /* VCCAutomaticCallbacksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCAutomaticCallbacksViewController.m; sourceTree = "<group>"; };
+		2E5F159716DBFE04003A87FA /* VCCAutomaticCallbacksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCCAutomaticCallbacksViewController.xib; sourceTree = "<group>"; };
+		2E5F159A16DBFE19003A87FA /* VCCManualCallbacksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCManualCallbacksViewController.h; sourceTree = "<group>"; };
+		2E5F159B16DBFE19003A87FA /* VCCManualCallbacksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCManualCallbacksViewController.m; sourceTree = "<group>"; };
+		2E5F159C16DBFE19003A87FA /* VCCManualCallbacksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCCManualCallbacksViewController.xib; sourceTree = "<group>"; };
+		2E5F159F16DBFF3C003A87FA /* NGMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGMacros.h; sourceTree = "<group>"; };
 		2E9F4BCF16D405AD000F1A04 /* ViewControllerContainment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerContainment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E9F4BD216D405AD000F1A04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2E9F4BD416D405AD000F1A04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,12 +94,19 @@
 		2E9F4BD816D405AD000F1A04 /* ViewControllerContainment */ = {
 			isa = PBXGroup;
 			children = (
+				2E5F159F16DBFF3C003A87FA /* NGMacros.h */,
 				2E9F4BE116D405AD000F1A04 /* VCCAppDelegate.h */,
 				2E9F4BE216D405AD000F1A04 /* VCCAppDelegate.m */,
 				2E9F4BEA16D405AD000F1A04 /* VCCViewController.h */,
 				2E9F4BEB16D405AD000F1A04 /* VCCViewController.m */,
 				2E9F4BED16D405AD000F1A04 /* VCCViewController.xib */,
 				2E9F4BD916D405AD000F1A04 /* Supporting Files */,
+				2E5F159516DBFE04003A87FA /* VCCAutomaticCallbacksViewController.h */,
+				2E5F159616DBFE04003A87FA /* VCCAutomaticCallbacksViewController.m */,
+				2E5F159716DBFE04003A87FA /* VCCAutomaticCallbacksViewController.xib */,
+				2E5F159A16DBFE19003A87FA /* VCCManualCallbacksViewController.h */,
+				2E5F159B16DBFE19003A87FA /* VCCManualCallbacksViewController.m */,
+				2E5F159C16DBFE19003A87FA /* VCCManualCallbacksViewController.xib */,
 			);
 			path = ViewControllerContainment;
 			sourceTree = "<group>";
@@ -164,6 +182,8 @@
 				2E9F4BE716D405AD000F1A04 /* Default@2x.png in Resources */,
 				2E9F4BE916D405AD000F1A04 /* Default-568h@2x.png in Resources */,
 				2E9F4BEF16D405AD000F1A04 /* VCCViewController.xib in Resources */,
+				2E5F159916DBFE04003A87FA /* VCCAutomaticCallbacksViewController.xib in Resources */,
+				2E5F159E16DBFE19003A87FA /* VCCManualCallbacksViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +197,8 @@
 				2E9F4BDF16D405AD000F1A04 /* main.m in Sources */,
 				2E9F4BE316D405AD000F1A04 /* VCCAppDelegate.m in Sources */,
 				2E9F4BEC16D405AD000F1A04 /* VCCViewController.m in Sources */,
+				2E5F159816DBFE04003A87FA /* VCCAutomaticCallbacksViewController.m in Sources */,
+				2E5F159D16DBFE19003A87FA /* VCCManualCallbacksViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +285,11 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewControllerContainment/ViewControllerContainment-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"NG_DEBUG_LEVEL=2",
+				);
 				INFOPLIST_FILE = "ViewControllerContainment/ViewControllerContainment-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,6 +328,7 @@
 				2E9F4BF416D405AD000F1A04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

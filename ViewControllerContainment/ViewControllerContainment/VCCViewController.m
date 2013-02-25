@@ -7,23 +7,33 @@
 //
 
 #import "VCCViewController.h"
+#import "VCCAutomaticCallbacksViewController.h"
+#import "VCCManualCallbacksViewController.h"
 
-@interface VCCViewController ()
-
-@end
 
 @implementation VCCViewController
 
-- (void)viewDidLoad
+#pragma mark - Public Properties
+#pragma mark - Class Methods
+#pragma mark - Instance Methods
+#pragma mark - IBActions
+
+- (IBAction)automaticCallbacksTapped:(id)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    VCCAutomaticCallbacksViewController * controller = [[VCCAutomaticCallbacksViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)manualCallbacksTapped:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    VCCManualCallbacksViewController * controller = [[VCCManualCallbacksViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
 }
+
+#pragma mark - Overriden
+#pragma mark - Private Properties
+#pragma mark - Private Methods
+#pragma mark - OtherPerfectClassDelegate
+#pragma mark - Notifications
 
 @end
