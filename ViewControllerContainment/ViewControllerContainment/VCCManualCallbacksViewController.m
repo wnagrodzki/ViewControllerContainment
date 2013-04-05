@@ -29,7 +29,7 @@
     return self;
 }
 
-#pragma mark - Overriden (Appearanca Callbacks)
+#pragma mark - Overriden (Appearance Callbacks)
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -52,6 +52,23 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
+    NGLogMessage();
+}
+
+#pragma mark - Overriden (Rotation Callbacks)
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    NGLogMessage();
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    NGLogMessage();
+}
+
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
     NGLogMessage();
 }
 
