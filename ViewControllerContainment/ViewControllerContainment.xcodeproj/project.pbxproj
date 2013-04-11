@@ -22,6 +22,12 @@
 		2E9F4BE916D405AD000F1A04 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F4BE816D405AD000F1A04 /* Default-568h@2x.png */; };
 		2E9F4BEC16D405AD000F1A04 /* VCCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F4BEB16D405AD000F1A04 /* VCCViewController.m */; };
 		2E9F4BEF16D405AD000F1A04 /* VCCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F4BED16D405AD000F1A04 /* VCCViewController.xib */; };
+		2ED0C5E21716E37E00FB7DA2 /* VCCRedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0C5E01716E37E00FB7DA2 /* VCCRedViewController.m */; };
+		2ED0C5E31716E37E00FB7DA2 /* VCCRedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED0C5E11716E37E00FB7DA2 /* VCCRedViewController.xib */; };
+		2ED0C5E71716E3CF00FB7DA2 /* VCCGreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0C5E51716E3CF00FB7DA2 /* VCCGreenViewController.m */; };
+		2ED0C5E81716E3CF00FB7DA2 /* VCCGreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED0C5E61716E3CF00FB7DA2 /* VCCGreenViewController.xib */; };
+		2ED0C5EC1716E3EB00FB7DA2 /* VCCBlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0C5EA1716E3EB00FB7DA2 /* VCCBlueViewController.m */; };
+		2ED0C5ED1716E3EB00FB7DA2 /* VCCBlueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED0C5EB1716E3EB00FB7DA2 /* VCCBlueViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +54,15 @@
 		2E9F4BEA16D405AD000F1A04 /* VCCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCCViewController.h; sourceTree = "<group>"; };
 		2E9F4BEB16D405AD000F1A04 /* VCCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCCViewController.m; sourceTree = "<group>"; };
 		2E9F4BEE16D405AD000F1A04 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VCCViewController.xib; sourceTree = "<group>"; };
+		2ED0C5DF1716E37E00FB7DA2 /* VCCRedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCRedViewController.h; sourceTree = "<group>"; };
+		2ED0C5E01716E37E00FB7DA2 /* VCCRedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCRedViewController.m; sourceTree = "<group>"; };
+		2ED0C5E11716E37E00FB7DA2 /* VCCRedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCCRedViewController.xib; sourceTree = "<group>"; };
+		2ED0C5E41716E3CF00FB7DA2 /* VCCGreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCGreenViewController.h; sourceTree = "<group>"; };
+		2ED0C5E51716E3CF00FB7DA2 /* VCCGreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCGreenViewController.m; sourceTree = "<group>"; };
+		2ED0C5E61716E3CF00FB7DA2 /* VCCGreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCCGreenViewController.xib; sourceTree = "<group>"; };
+		2ED0C5E91716E3EB00FB7DA2 /* VCCBlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCBlueViewController.h; sourceTree = "<group>"; };
+		2ED0C5EA1716E3EB00FB7DA2 /* VCCBlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCBlueViewController.m; sourceTree = "<group>"; };
+		2ED0C5EB1716E3EB00FB7DA2 /* VCCBlueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCCBlueViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +122,7 @@
 				2E5F159A16DBFE19003A87FA /* VCCManualCallbacksViewController.h */,
 				2E5F159B16DBFE19003A87FA /* VCCManualCallbacksViewController.m */,
 				2E5F159C16DBFE19003A87FA /* VCCManualCallbacksViewController.xib */,
+				2ED0C5DE1716E36300FB7DA2 /* ViewControllers */,
 			);
 			path = ViewControllerContainment;
 			sourceTree = "<group>";
@@ -123,6 +139,22 @@
 				2E9F4BE816D405AD000F1A04 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2ED0C5DE1716E36300FB7DA2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2ED0C5DF1716E37E00FB7DA2 /* VCCRedViewController.h */,
+				2ED0C5E01716E37E00FB7DA2 /* VCCRedViewController.m */,
+				2ED0C5E11716E37E00FB7DA2 /* VCCRedViewController.xib */,
+				2ED0C5E41716E3CF00FB7DA2 /* VCCGreenViewController.h */,
+				2ED0C5E51716E3CF00FB7DA2 /* VCCGreenViewController.m */,
+				2ED0C5E61716E3CF00FB7DA2 /* VCCGreenViewController.xib */,
+				2ED0C5E91716E3EB00FB7DA2 /* VCCBlueViewController.h */,
+				2ED0C5EA1716E3EB00FB7DA2 /* VCCBlueViewController.m */,
+				2ED0C5EB1716E3EB00FB7DA2 /* VCCBlueViewController.xib */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +216,9 @@
 				2E9F4BEF16D405AD000F1A04 /* VCCViewController.xib in Resources */,
 				2E5F159916DBFE04003A87FA /* VCCAutomaticCallbacksViewController.xib in Resources */,
 				2E5F159E16DBFE19003A87FA /* VCCManualCallbacksViewController.xib in Resources */,
+				2ED0C5E31716E37E00FB7DA2 /* VCCRedViewController.xib in Resources */,
+				2ED0C5E81716E3CF00FB7DA2 /* VCCGreenViewController.xib in Resources */,
+				2ED0C5ED1716E3EB00FB7DA2 /* VCCBlueViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +234,9 @@
 				2E9F4BEC16D405AD000F1A04 /* VCCViewController.m in Sources */,
 				2E5F159816DBFE04003A87FA /* VCCAutomaticCallbacksViewController.m in Sources */,
 				2E5F159D16DBFE19003A87FA /* VCCManualCallbacksViewController.m in Sources */,
+				2ED0C5E21716E37E00FB7DA2 /* VCCRedViewController.m in Sources */,
+				2ED0C5E71716E3CF00FB7DA2 /* VCCGreenViewController.m in Sources */,
+				2ED0C5EC1716E3EB00FB7DA2 /* VCCBlueViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

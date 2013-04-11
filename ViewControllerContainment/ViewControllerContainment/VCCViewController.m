@@ -9,6 +9,9 @@
 #import "VCCViewController.h"
 #import "VCCAutomaticCallbacksViewController.h"
 #import "VCCManualCallbacksViewController.h"
+#import "VCCRedViewController.h"
+#import "VCCGreenViewController.h"
+#import "VCCBlueViewController.h"
 
 
 @implementation VCCViewController
@@ -21,12 +24,24 @@
 - (IBAction)automaticCallbacksTapped:(id)sender
 {
     VCCAutomaticCallbacksViewController * controller = [[VCCAutomaticCallbacksViewController alloc] init];
+    
+    VCCRedViewController * red = [[VCCRedViewController alloc] init];
+    VCCGreenViewController * green = [[VCCGreenViewController alloc] init];
+    VCCBlueViewController * blue = [[VCCBlueViewController alloc] init];
+    controller.viewControllers = @[red, green, blue];
+    
     [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (IBAction)manualCallbacksTapped:(id)sender
 {
     VCCManualCallbacksViewController * controller = [[VCCManualCallbacksViewController alloc] init];
+    
+    VCCRedViewController * red = [[VCCRedViewController alloc] init];
+    VCCGreenViewController * green = [[VCCGreenViewController alloc] init];
+    VCCBlueViewController * blue = [[VCCBlueViewController alloc] init];
+    controller.viewControllers = @[red, green, blue];
+    
     [self.navigationController pushViewController:controller animated:YES];
 }
 

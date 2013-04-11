@@ -10,4 +10,6 @@
 
 @interface VCCManualCallbacksViewController : UIViewController
 
+@property (strong, nonatomic) NSArray * viewControllers;
+
 @end
