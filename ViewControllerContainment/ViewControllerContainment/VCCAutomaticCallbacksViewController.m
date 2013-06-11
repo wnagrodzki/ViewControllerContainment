@@ -72,14 +72,6 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-
-    if (self.viewControllers.count)
-        [self displayViewController:self.viewControllers[0]];
-}
-
 #pragma mark - Overriden (Appearanca Callbacks)
 
 - (void)viewWillAppear:(BOOL)animated
@@ -92,6 +84,10 @@
 {
     NGLogMessage();
     [super viewDidAppear:animated];
+    
+    if (self.viewControllers.count)
+        [self displayViewController:self.viewControllers[0]];
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -111,29 +107,38 @@
 
 - (void)cycleFromViewController:(UIViewController *)fromViewController toViewController:(UIViewController *)toViewController forward:(BOOL)forward
 {
+    // powiadomienie fromViewController że zostanie usunięty z hierarchii kontrolerów
     [fromViewController willMoveToParentViewController:nil];
+    // dodanie toViewController do hierarchi kontrolerów
+    // metoda [toViewController willMoveToParentViewController:self] jest wywołana automatycznie przez -addChildViewController:
     [self addChildViewController:toViewController];
     
+    // ustawenie ramki widoku nowego kontrolera
     CGRect frame = self.containerView.bounds;
     frame.origin.x = forward ? frame.size.width : -frame.size.width;
     toViewController.view.frame = frame;
     
+    // ta metoda automatycznie usunie widok starego kontrolera z hierarchi oraz doda widok nowego
     [self transitionFromViewController:fromViewController
                       toViewController:toViewController
                               duration:0.3
                                options:UIViewAnimationOptionCurveEaseInOut
                             animations:^{
+                                // animacja wyjścia widoku starego kontrolera
                                 CGRect frame = self.containerView.bounds;
                                 frame.origin.x = forward ? -frame.size.width : frame.size.width;
                                 fromViewController.view.frame = frame;
                                 
+                                // animacja wejścia widoku nowego kontrolera
                                 toViewController.view.frame = self.containerView.bounds;
                             }
                             completion:^(BOOL finished) {
+                                // powiadominie toViewController że został dodany jako child view controller
                                 [toViewController didMoveToParentViewController:self];
+                                // usunięcie starego kontrolera z hierarchi kontrolerów
                                 [fromViewController removeFromParentViewController];
+                                // metoda [fromViewController didMoveToParentViewController:nil] jest wywołana automatycznie przez -removeFromParentViewController
                             }];
-
 }
 
 - (void)displayViewController:(UIViewController *)controller
@@ -146,8 +151,15 @@
     
     [self addChildViewController:controller];
     controller.view.frame = self.containerView.bounds;
+    controller.view.alpha = 0;
     [self.containerView addSubview:controller.view];
-    [controller didMoveToParentViewController:self];
+    
+    [UIView animateWithDuration:2
+                     animations:^{
+                         controller.view.alpha = 1;
+                     } completion:^(BOOL finished) {
+                         [controller didMoveToParentViewController:self];
+                     }];
 }
 
 #pragma mark - OtherPerfectClassDelegate
