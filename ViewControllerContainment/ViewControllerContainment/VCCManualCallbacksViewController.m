@@ -134,9 +134,9 @@
     [fromViewController beginAppearanceTransition:NO animated:YES];
     
     [self addChildViewController:toViewController];
-    [toViewController beginAppearanceTransition:YES animated:YES];
     toViewController.view.frame = self.containerView.bounds;
     toViewController.view.alpha = 0;
+    [toViewController beginAppearanceTransition:YES animated:YES];
     [self.containerView addSubview:toViewController.view];
     
     [UIView animateWithDuration:0.3
